@@ -20,7 +20,7 @@
                 <div class="flex items-center gap-2 mt-6">
                     <p class="text-xl font-normal">income :</p>
                     <input id="income"
-                     class=" rounded-sm w-60  h-10 bg-slate-100 py-1 px-2" type="text" placeholder="taka">
+                     class=" rounded-sm w-60  h-10 bg-slate-100 py-1 px-2" type="number" placeholder="taka">
                 </div>
             </div>
             <div class="mt-6 text-center">
@@ -28,39 +28,39 @@
                 <div class="flex items-center gap-2 mt-6">
                     <p class="text-xl font-normal">Food :</p>
                     <input id="food"
-                     class=" rounded-sm w-60 h-10 bg-slate-100 py-1 px-2" type="text" placeholder="taka">
+                     class=" rounded-sm w-60 h-10 bg-slate-100 py-1 px-2"type="number" placeholder="taka">
                 </div>
                 <div class="flex items-center gap-2 mt-6">
                     <p class="text-xl font-normal">Rent : </p>
                     <input id="rent"
-                    class=" rounded-sm w-60 h-10 bg-slate-100 py-1 px-2" type="text" placeholder="taka">
+                    class=" rounded-sm w-60 h-10 bg-slate-100 py-1 px-2" type="number" placeholder="taka">
                 </div>
                 <div class="flex items-center gap-2 mt-6">
                     <p class="text-xl font-normal">Clothes:</p>
                     <input id="clothes"
-                     class=" rounded-sm w-60 h-10 bg-slate-100 py-1 px-2" type="text" placeholder="taka">
+                     class=" rounded-sm w-60 h-10 bg-slate-100 py-1 px-2"type="number" placeholder="taka">
                 </div>
             </div>
             <button onclick="funOne()" class="bg-blue-400 py-2 px-3 rounded-sm w-32 text-white mt-8">Calculate</button>
 
-            <h2 class="mt-10 text-xl font-normal">Total expense : <span  id="total">
+            <h2 class="mt-10 text-xl font-normal">Total expense :  <span  id="total"> ৳
                 </span></h2>
         
-            <h2  class="text-xl font-normal mt-3">balance : <span id="remaining">
+            <h2  class="text-xl font-normal mt-3">balance : <span id="remaining"> ৳
                 </span></h2>
             <br>
     
             <div class="flex items-center text-center">
                 <h2 class="px-2 text-xl font-normal">save :</h2>
-                <input class="rounded-sm w-40 h-10 bg-slate-100 py-1 px-2" id="saving" placeholder="percent"  type="text">
+                <input class="rounded-sm w-40 h-10 bg-slate-100 py-1 px-2" id="saving" placeholder="percent" type="number">
                 <h1 class="p-4"> % </h1>
                 <button onclick="funTwo()" class="bg-blue-400 py-2 px-3 rounded-sm  text-white w-20 ">save</button>
             </div>
             <br>
             <h2  class="px-2 text-xl font-normal">Saving amount : <span id="saving-amount"> 
-                
+                ৳
             </span></h2>
-            <h2  class="px-2 text-xl font-normal mt-3">remaining balance : <span id="remaining-amount"> </span></h2>
+            <h2  class="px-2 text-xl font-normal mt-3">remaining balance : <span id="remaining-amount"> ৳ </span></h2>
         </div>
     </section>
     <script src="script.js"></script>

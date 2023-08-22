@@ -21,9 +21,22 @@ function funOne(){
     const total = income - expense ;
     
 
-    totalExpense.innerText = expense;
-    remaining.innerText = total 
+    totalExpense.innerText = expense + '৳';
+    remaining.innerText = total + '৳';
     
+    if(expense > income){
+        
+        alert("you don't have enough money to spend");
+        totalExpense.innerText = [] + '৳';
+        remaining.innerText = [] + '৳';
+        document.getElementById('income').value = [];
+        document.getElementById('food').value = [];
+        document.getElementById('rent').value = [];
+        document.getElementById('clothes').value = [];
+        
+
+        return;
+    }
 }
 
 function funTwo(){
@@ -44,11 +57,20 @@ function funTwo(){
     
     const savingAmount = document.getElementById('saving-amount');
    
-    savingAmount.innerText = income*save / 100
+    savingAmount.innerText = income*save / 100  + '৳'
   
     const remainingAmount = document.getElementById('remaining-amount');
 
-    remainingAmount.innerHTML = total - savingAmount.innerText 
+    remainingAmount.innerHTML = total - parseFloat( savingAmount.innerText) +'৳';
+
+    if(parseFloat( savingAmount.innerText) > total ){
+        alert("you don't have enough money to save");
+      
+        savingAmount.innerText = [] + '৳';
+        remainingAmount.innerText = [] + '৳';
+
+
+    }
 
 
     
