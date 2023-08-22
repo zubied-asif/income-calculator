@@ -44,7 +44,7 @@ function funTwo(){
     
     const savingAmount = document.getElementById('saving-amount');
    
-    savingAmount.innerText = total*save / 100
+    savingAmount.innerText = income*save / 100
   
     const remainingAmount = document.getElementById('remaining-amount');
 
